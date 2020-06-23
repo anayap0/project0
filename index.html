@@ -34,17 +34,38 @@
                             <a class="nav-link" href="#">Threats</a>
                         </li>
                     </ul>
-                    <span class="navbar-text">
+                    <span class="navbar-text ml-0">
                         <a class="nav-link" href="#">Help conserve</a>
                     </span>
                 </div>
             </nav>
             </div>
             
-            <div id="maincontent" class="">
-                <div class="container-fluid" style="justify-content: center;">
+            <div id="maincontent mx-4" class="text-center">
+                <div class="container-fluid justify-content-center my-2" id="mainImageAndCaption">
                     <h1>Learn about the amur leopard</h1>
-                    <img src="Images/amur_leopard_main.jpg" width="100%" alt="The Amur Leopard">
+                    <img class="rounded img-fluid sticky-top" src="Images/amur_leopard_main.jpg" style="width:100%;max-width:800px;" alt="The Amur Leopard" title="The Amur Leopard">
+                    <figcaption class="text-muted">The amur leopard has a gorgeous fur coat.</figcaption>
+                </div>
+                <div class="container" id="generalInfo">
+                    <div class="order-md-1 my-5 col-4-fluid" style="max-width: fit-content;">
+                        <ul class="list-group-flush">
+                            <li class="list-group-item p-5">Item 1</li>
+                            <li class="list-group-item p-5">Item 2</li>
+                            <li class="list-group-item p-5">Item 3</li>
+                            <li class="list-group-item p-5">Item 4</li>
+                            <li class="list-group-item p-5">Item 5</li>
+                        </ul>
+                    </div>
+                    <div class="container order-md-2">
+                        <label for="donationForm" class="mb-2">Donation amount</label>
+                        <div class="input-group mb-5">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Gimme mun mun" id="donationForm">
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
