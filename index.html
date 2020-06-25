@@ -6,6 +6,9 @@
 
         <!-- CSS only -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <!--My CSS stylesheet-->
+        <link rel="stylesheet" href="styles0.css">
 
         <!-- JS, Popper.js, and jQuery -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -14,60 +17,78 @@
     </head>
 
     <body>
-          <header>
-            <div id="navbarDiv">
-                <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                <a class="navbar-brand" href="index.html">The Amur Leopard</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Habitat</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Diet</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Threats</a>
-                        </li>
-                    </ul>
-                    <span class="navbar-text ml-0">
-                        <a class="nav-link" href="#">Help conserve</a>
-                    </span>
-                </div>
-            </nav>
+        <header>
+            <div id="navbarDiv" class="">
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                    <a class="navbar-brand" href="index.html">The Amur Leopard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="habitat.html">Habitat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="diet.html">Diet</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="threats.html">Threats</a>
+                            </li>
+                        </ul>
+                        <span class="navbar-text ml-0">
+                            <a class="nav-link" href="help_conserve.html">Help conserve</a>
+                        </span>
+                    </div>
+                </nav>
             </div>
-            
-            <div id="maincontent mx-4" class="text-center">
-                <div class="container-fluid justify-content-center my-2" id="mainImageAndCaption">
+        </header>
+        <div id="mainContent" class="">
+            <div class="jumbotron-fluid p-md-5 p-sm-1 cen" id="mainImageAndCaption" style="background-color: rgb(228, 229, 230)">
+                <div>
                     <h1>Learn about the amur leopard</h1>
-                    <img class="rounded img-fluid sticky-top" src="Images/amur_leopard_main.jpg" style="width:100%;max-width:800px;" alt="The Amur Leopard" title="The Amur Leopard">
+                </div>
+                <div>
+                    <img class="img-fluid" id="amur_leopard_image_main_page" src="Images/amur_leopard_main.jpg" alt="The Amur Leopard" title="The Amur Leopard">
                     <figcaption class="text-muted">The amur leopard has a gorgeous fur coat.</figcaption>
                 </div>
-                <div class="container" id="generalInfo">
-                    <div class="order-md-1 my-5 col-4-fluid" style="max-width: fit-content;">
-                        <ul class="list-group-flush">
-                            <li class="list-group-item p-5">Item 1</li>
-                            <li class="list-group-item p-5">Item 2</li>
-                            <li class="list-group-item p-5">Item 3</li>
-                            <li class="list-group-item p-5">Item 4</li>
-                            <li class="list-group-item p-5">Item 5</li>
-                        </ul>
+            </div>
+            <div class="jumbotron-fluid p-md-5 p-sm-1 bg-light" style="background-color: rgb(228, 229, 230);">
+                <div class="d-flex flex-wrap justify-contents-center px-5 cen">
+                    <div class="card col-xs-10 col-md-4 p-2">
+                        <img src="Images/habitat_card_image.jpg" class="card-img" alt="Habitat">
+                        <div class="card-body">
+                            <h4 class="card-title">Habitat</h4>
+                            <p class="card-text">Learn about the amur leopard's habitat by clicking the button below.</p>
+                            <footer class="card-footer">
+                                <a href="habitat.html" class="btn btn-info btn-block">&#8594;</a>
+                            </footer>
+                        </div>
                     </div>
-                    <div class="container order-md-2">
-                        <label for="donationForm" class="mb-2">Donation amount</label>
-                        <div class="input-group mb-5">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">$</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Gimme mun mun" id="donationForm">
+                    <div class="card col-xs-10 col-md-4 p-2">
+                        <img src="Images/roe_deer.jpg" class="card-img" alt="Diet">
+                        <div class="card-body">
+                            <h5 class="card-title">Diet</h5>
+                            <p class="card-text">Learn about the amur leopard's diet by clicking below.</p>
+                            <footer class="card-footer">
+                                <a href="diet.html" class="btn btn-info btn-block">&#8594;</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="card col-xs-10 col-md-4 p-2">
+                        <img src="Images/poachers.jpg" class="card-img" alt="Threats">
+                        <div class="card-body">
+                            <h5 class="card-title">Threats</h5>
+                            <p class="card-text">Learn about the threats that the amur leopard faces and
+                                why it is a critically endangered species. Click below.
+                            </p>
+                            <footer class="card-footer">
+                                <a href="threats.html" class="btn btn-info btn-block">&#8594;</a>
+                            </footer>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
     </body>
 </html>
