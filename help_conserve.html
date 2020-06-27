@@ -44,5 +44,63 @@
             </div>
         </header>
 
+        <div class="mx-5" id="mainContent">
+            <div class="container size-limit" id="mainContentContainer">
+                <div class="my-3" id="helpConservePageHeading">
+                    <h2>Make a donation</h2>
+                    <p class="text-muted">The money that you contribute will go towards conserving the amur leopard's habitat and preventing poaching.</p>
+                </div>
+                <h4 class="mb-3">Billing Information</h4>
+                <form class="needs-validation">
+                    <div class="input-group">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="creditCard" name="paymentMethod">
+                            <label for="creditCard">Credit Card</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="debitCard" name="paymentMethod">
+                            <label for="debitCard">Debit Card</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3 justify-content-between">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">First Name</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control mb-1" id="firstName">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Last Name</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="lastName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="cardNumber">Card Number</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="cardNumber">
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cardExpirationDate">Expiration Date</label>
+                            <div class="input-group">
+                                <input type="date" class="form-control" id="cardExpirationDate">
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cardCVV">CVV</label>
+                            <div class="input-group">
+                                <input type="number" maxlength="3" class="form-control" id="cardCVV">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <a class="btn btn-info" type="submit">Submit</a>
+                </form>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,6 +1,11 @@
-#amur_leopard_image_main_page {
-  width: 100%;
-  max-width: 940px;
+.size-limit {
+  max-width: 700px;
+}
+
+.size-limit-with-image {
+  max-width: 950px;
+}
+.size-limit-with-image .row {
   margin-left: auto;
   margin-right: auto;
 }
@@ -12,15 +17,13 @@ img {
 }
 
 figcaption {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .card {
   float: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  min-width: 250px;
+  margin-bottom: 15px;
+  min-width: 200px;
   max-width: 300px;
 }
 .card .card-img {
@@ -31,12 +34,16 @@ figcaption {
 
 @media (max-width: 600px) {
   .card {
-    width: 100%;
+    justify-self: center !important;
+  }
+
+  #pageCardsDiv {
+    justify-content: center;
   }
 }
 @media (min-width: 601px) {
-  .card .card-text {
-    margin-top: 10px;
+  #pageCardsDiv {
+    justify-content: space-between;
   }
 }
 .btn-info:hover {
