@@ -3,17 +3,39 @@ $general-size-limit: 950px;
     min-width: 450px;
     max-width: 700px;
 }
+$padding-space: 20px;
+.row {
+    padding-left: $padding-space;
+    padding-right: $padding-space;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+table {
+    width: 100%;
+    th {
+        border-bottom: 2px solid black;
+        max-width: 50px;
+    }
+    td {
+        max-width: 50px;
+    }
+}
 .size-limit {
     max-width: $general-size-limit;
 }
-img {
+.myImg {
+    margin: 1px;
     justify-self: center;
     width: 100%;
+    object-fit: cover;
     border-radius: 1%;
 }
 .flexImage {
-    margin: 5px;
-    width: 300px;
+    @extend .myImg;
+    max-width: 300px;
     height: 225px;
     object-fit: cover;
     border-radius: 3%; 
@@ -26,12 +48,10 @@ figcaption {
     min-width: 200px;
     max-width: 300px;
     .card-img {
-        width: 100%;
-        object-fit: cover;
+        @extend .myImg;
         height: 150px;
     }
 }
-
 @media (max-width: 767px) {
     .card {
         justify-self: center !important;
@@ -50,10 +70,6 @@ $btn-info-hover-color: #33b5dd;
     background-color: $btn-info-hover-color;
     border-color: $btn-info-hover-color;
     box-shadow: 0px 0px 5px 2px lightgray;
-}
-.cen {
-    justify-content: center;
-    margin: auto;
 }
 .jumbotron-fluid {
     text-align: center;
