@@ -1,13 +1,10 @@
-.size-limit {
+#mainContent-helpConserve {
+  min-width: 450px;
   max-width: 700px;
 }
 
-.size-limit-with-image {
+.size-limit {
   max-width: 950px;
-}
-.size-limit-with-image .row {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 img {
@@ -16,12 +13,19 @@ img {
   border-radius: 1%;
 }
 
+.flexImage {
+  margin: 5px;
+  width: 300px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 3%;
+}
+
 figcaption {
   margin-top: 25px;
 }
 
 .card {
-  float: center;
   margin-bottom: 15px;
   min-width: 200px;
   max-width: 300px;
@@ -32,7 +36,7 @@ figcaption {
   height: 150px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .card {
     justify-self: center !important;
   }
@@ -41,7 +45,7 @@ figcaption {
     justify-content: center;
   }
 }
-@media (min-width: 601px) {
+@media (min-width: 768px) {
   #pageCardsDiv {
     justify-content: space-between;
   }
